@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Min CV-webbplats</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Hem</a></li>
+          <li><a href="cv.html">CV</a></li>
+          <li><a href="portfolio.html" class="active">Portfolio</a></li>
+          <li><a href="about.html">Om mig</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Min portfolio med tidigare projekt:</h1>
+
+      <!-- Projekt 1 -->
+      <section class="project">
+        <h2>Projekt 1 - JediBank</h2>
+        <div class="project-content">
+          <img
+            src="images/Skärmbild 2025-02-24 182358.png"
+            alt="Projekt 1"
+            width="400"
+            height="250"
+          />
+          <div class="project-details">
+            <label for="modal1" class="modal-open"
+              >Klicka för mer information</label
+            >
+            <input type="checkbox" id="modal1" class="modal-checkbox" />
+            <div class="modal">
+              <div class="modal-content">
+                <label for="modal1" class="modal-close">&times;</label>
+                <h2>Projekt 1 - JediBank</h2>
+                <p>
+                  Här gjorde jag tillsammans med ett gäng en bank applikation
+                  som hanterade överföringar internt och externt.
+                </p>
+                <p>
+                  Man kunde göra detta med olika valutor samt även se sparade
+                  transaktioner.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projekt 2 -->
+      <section class="project">
+        <h2>Projekt 2 - Databas</h2>
+        <div class="project-content">
+          <img
+            src="images/Skärmbild 2025-02-24 222005.png"
+            alt="Projekt 2"
+            width="400"
+            height="230"
+          />
+          <div class="project-details">
+            <label for="modal2" class="modal-open"
+              >Klicka för mer information</label
+            >
+            <input type="checkbox" id="modal2" class="modal-checkbox" />
+            <div class="modal">
+              <div class="modal-content">
+                <label for="modal2" class="modal-close">&times;</label>
+                <h2>Projekt 2</h2>
+                <p>
+                  Detta projektet handlade om att skapa en databas som hanterar
+                  information gällande en hel skola.
+                </p>
+                <p>
+                  Bland annat kunde man hämta detaljerad info om elever samt
+                  lärare och även tillsätta nya.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2025 | Florent Hajdari | Rättigheter förbehållna</p>
+    </footer>
+  </body>
+</html>

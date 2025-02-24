@@ -1,0 +1,153 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: whitesmoke;
+    color: black;
+    padding: 15px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    text-decoration: underline;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    display: flex; /* Flexbox-inställning för att centrera innehållet */
+    justify-content: center; /* Centrerar horisontellt */
+    align-items: center; /* Centrerar vertikalt */
+    flex-direction: column; /* Ställer in flex-riktning för att placera elementen vertikalt */
+    text-align: center; /* Centrerar texten */
+}
+
+footer {
+    background-color: whitesmoke;
+    color: red;
+    text-align: center; /* Centrerar texten i footern */
+    padding: 10px 0;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+}
+
+.modal-close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-open {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.modal-open:hover {
+    text-decoration: underline;
+}
+
+.modal-checkbox {
+    display: none;
+}
+
+.modal-checkbox:checked + .modal {
+    display: block;
+}
+
+.project {
+    margin-bottom: 20px;
+}
+
+.project-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centrerar horisontellt*/
+}
+
+.project-content img {
+    max-width: 100%;
+    flex: 1;
+}
+
+.project-details {
+    flex: 2;
+    padding: 10px;
+    text-align: center; /* Centrerar texten */
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-content {
+        flex-direction: column;
+    }
+
+    .modal-content {
+        width: 90%;
+        margin: 50% auto;
+    }
+
+    footer {
+        text-align: center;
+        padding: 10px 0;
+        position: relative;
+    }
+}
