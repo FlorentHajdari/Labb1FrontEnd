@@ -151,3 +151,25 @@ footer {
         position: relative;
     }
 }
+
+/* layout för två kolumner */
+.two-columns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.column {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+}
+
+/* anpassning för mobiler */
+@media (max-width: 768px) {
+    .two-columns {
+        flex-direction: column;
+    }
+}
+
